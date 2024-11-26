@@ -9,7 +9,7 @@ with open('rfcmodel.bin', 'rb') as f_in:
 with open('dv.bin', 'rb') as dict_vect:
     dv = pickle.load(dict_vect)
 
-app = Flask('predict')
+app = Flask('rain_predict')
 
 @app.route('/predict', methods = ['POST'])
 
